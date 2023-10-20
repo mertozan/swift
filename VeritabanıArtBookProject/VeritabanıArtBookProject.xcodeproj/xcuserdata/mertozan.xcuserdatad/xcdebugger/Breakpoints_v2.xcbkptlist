@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "2C3C2FBB-CB91-42FB-88AD-BBDC6FE66992"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F832FF12-F1E0-4F8B-B1CE-BF4D2BDD96A7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Veritaban&#x131;ArtBookProject/DetailsVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "DetailsVC"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "F832FF12-F1E0-4F8B-B1CE-BF4D2BDD96A7 - 9ad6c9f35de6c42c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Veritaban&#x131;ArtBookProject.DetailsVC.yearText.getter : Swift.Optional&lt;__C.UITextField&gt;"
+                  moduleName = "Veritaban&#x131;ArtBookProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mertozan/workspace/swift/Veritaban%C4%B1ArtBookProject/Veritaban%C4%B1ArtBookProject/DetailsVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "F832FF12-F1E0-4F8B-B1CE-BF4D2BDD96A7 - c4f1655085641858"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Veritaban&#x131;ArtBookProject.DetailsVC.yearText.setter : Swift.Optional&lt;__C.UITextField&gt;"
+                  moduleName = "Veritaban&#x131;ArtBookProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mertozan/workspace/swift/Veritaban%C4%B1ArtBookProject/Veritaban%C4%B1ArtBookProject/DetailsVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  uuid = "F832FF12-F1E0-4F8B-B1CE-BF4D2BDD96A7 - ce0c907524425f2f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Veritaban&#x131;ArtBookProject.DetailsVC.yearText.modify : Swift.Optional&lt;__C.UITextField&gt;"
+                  moduleName = "Veritaban&#x131;ArtBookProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mertozan/workspace/swift/Veritaban%C4%B1ArtBookProject/Veritaban%C4%B1ArtBookProject/DetailsVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "F832FF12-F1E0-4F8B-B1CE-BF4D2BDD96A7 - a6ea543b6d225837"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Veritaban&#x131;ArtBookProject.DetailsVC.yearText.modify : Swift.Optional&lt;__C.UITextField&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "Veritaban&#x131;ArtBookProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mertozan/workspace/swift/Veritaban%C4%B1ArtBookProject/Veritaban%C4%B1ArtBookProject/DetailsVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "F832FF12-F1E0-4F8B-B1CE-BF4D2BDD96A7 - 399fc29b1a086073"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Veritaban&#x131;ArtBookProject.DetailsVC.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Veritaban&#x131;ArtBookProject.DetailsVC"
+                  moduleName = "Veritaban&#x131;ArtBookProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mertozan/workspace/swift/Veritaban%C4%B1ArtBookProject/Veritaban%C4%B1ArtBookProject/DetailsVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "140">
+               </Location>
+               <Location
+                  uuid = "F832FF12-F1E0-4F8B-B1CE-BF4D2BDD96A7 - 568cab2554509d06"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Veritaban&#x131;ArtBookProject.DetailsVC.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Veritaban&#x131;ArtBookProject.DetailsVC&gt;"
+                  moduleName = "Veritaban&#x131;ArtBookProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mertozan/workspace/swift/Veritaban%C4%B1ArtBookProject/Veritaban%C4%B1ArtBookProject/DetailsVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "116">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
