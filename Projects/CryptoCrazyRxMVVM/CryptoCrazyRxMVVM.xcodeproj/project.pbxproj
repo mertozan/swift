@@ -13,6 +13,8 @@
 		FB835E4D2AEFFD4C00B8CAC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB835E4B2AEFFD4C00B8CAC3 /* Main.storyboard */; };
 		FB835E4F2AEFFD4D00B8CAC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB835E4E2AEFFD4D00B8CAC3 /* Assets.xcassets */; };
 		FB835E522AEFFD4D00B8CAC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB835E502AEFFD4D00B8CAC3 /* LaunchScreen.storyboard */; };
+		FB835E5E2AF0023800B8CAC3 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB835E5D2AF0023800B8CAC3 /* Crypto.swift */; };
+		FB835E602AF00E3A00B8CAC3 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB835E5F2AF00E3A00B8CAC3 /* Webservice.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		FB835E4E2AEFFD4D00B8CAC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB835E512AEFFD4D00B8CAC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB835E532AEFFD4D00B8CAC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB835E5D2AF0023800B8CAC3 /* Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
+		FB835E5F2AF00E3A00B8CAC3 /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,49 @@
 		FB835E442AEFFD4C00B8CAC3 /* CryptoCrazyRxMVVM */ = {
 			isa = PBXGroup;
 			children = (
-				FB835E452AEFFD4C00B8CAC3 /* AppDelegate.swift */,
-				FB835E472AEFFD4C00B8CAC3 /* SceneDelegate.swift */,
-				FB835E492AEFFD4C00B8CAC3 /* ViewController.swift */,
+				FB835E5C2AEFFF1900B8CAC3 /* Service */,
+				FB835E5B2AEFFEE200B8CAC3 /* Model */,
+				FB835E5A2AEFFED900B8CAC3 /* ViewModel */,
+				FB835E592AEFFECB00B8CAC3 /* View */,
 				FB835E4B2AEFFD4C00B8CAC3 /* Main.storyboard */,
 				FB835E4E2AEFFD4D00B8CAC3 /* Assets.xcassets */,
 				FB835E502AEFFD4D00B8CAC3 /* LaunchScreen.storyboard */,
 				FB835E532AEFFD4D00B8CAC3 /* Info.plist */,
 			);
 			path = CryptoCrazyRxMVVM;
+			sourceTree = "<group>";
+		};
+		FB835E592AEFFECB00B8CAC3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FB835E452AEFFD4C00B8CAC3 /* AppDelegate.swift */,
+				FB835E472AEFFD4C00B8CAC3 /* SceneDelegate.swift */,
+				FB835E492AEFFD4C00B8CAC3 /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FB835E5A2AEFFED900B8CAC3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FB835E5B2AEFFEE200B8CAC3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FB835E5D2AF0023800B8CAC3 /* Crypto.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FB835E5C2AEFFF1900B8CAC3 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				FB835E5F2AF00E3A00B8CAC3 /* Webservice.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +176,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB835E5E2AF0023800B8CAC3 /* Crypto.swift in Sources */,
 				FB835E4A2AEFFD4C00B8CAC3 /* ViewController.swift in Sources */,
 				FB835E462AEFFD4C00B8CAC3 /* AppDelegate.swift in Sources */,
+				FB835E602AF00E3A00B8CAC3 /* Webservice.swift in Sources */,
 				FB835E482AEFFD4C00B8CAC3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
