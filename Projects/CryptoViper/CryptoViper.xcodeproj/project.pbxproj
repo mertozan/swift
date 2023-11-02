@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		FBFF23B82AF29D2F00B517F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFF23B72AF29D2F00B517F4 /* AppDelegate.swift */; };
 		FBFF23BA2AF29D2F00B517F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFF23B92AF29D2F00B517F4 /* SceneDelegate.swift */; };
-		FBFF23BC2AF29D2F00B517F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFF23BB2AF29D2F00B517F4 /* ViewController.swift */; };
-		FBFF23BF2AF29D2F00B517F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBFF23BD2AF29D2F00B517F4 /* Main.storyboard */; };
 		FBFF23C12AF29D3000B517F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBFF23C02AF29D3000B517F4 /* Assets.xcassets */; };
 		FBFF23C42AF29D3000B517F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBFF23C22AF29D3000B517F4 /* LaunchScreen.storyboard */; };
 		FBFF23CC2AF29D4100B517F4 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFF23CB2AF29D4100B517F4 /* View.swift */; };
@@ -24,8 +22,6 @@
 		FBFF23B42AF29D2F00B517F4 /* CryptoViper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoViper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBFF23B72AF29D2F00B517F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBFF23B92AF29D2F00B517F4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FBFF23BB2AF29D2F00B517F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FBFF23BE2AF29D2F00B517F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FBFF23C02AF29D3000B517F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FBFF23C32AF29D3000B517F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FBFF23C52AF29D3000B517F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -68,8 +64,6 @@
 			children = (
 				FBFF23B72AF29D2F00B517F4 /* AppDelegate.swift */,
 				FBFF23B92AF29D2F00B517F4 /* SceneDelegate.swift */,
-				FBFF23BB2AF29D2F00B517F4 /* ViewController.swift */,
-				FBFF23BD2AF29D2F00B517F4 /* Main.storyboard */,
 				FBFF23C02AF29D3000B517F4 /* Assets.xcassets */,
 				FBFF23C22AF29D3000B517F4 /* LaunchScreen.storyboard */,
 				FBFF23C52AF29D3000B517F4 /* Info.plist */,
@@ -142,7 +136,6 @@
 			files = (
 				FBFF23C42AF29D3000B517F4 /* LaunchScreen.storyboard in Resources */,
 				FBFF23C12AF29D3000B517F4 /* Assets.xcassets in Resources */,
-				FBFF23BF2AF29D2F00B517F4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,7 +150,6 @@
 				FBFF23D22AF29D7600B517F4 /* Presenter.swift in Sources */,
 				FBFF23CC2AF29D4100B517F4 /* View.swift in Sources */,
 				FBFF23D42AF29D7F00B517F4 /* Entity.swift in Sources */,
-				FBFF23BC2AF29D2F00B517F4 /* ViewController.swift in Sources */,
 				FBFF23CE2AF29D5400B517F4 /* Interactor.swift in Sources */,
 				FBFF23B82AF29D2F00B517F4 /* AppDelegate.swift in Sources */,
 				FBFF23BA2AF29D2F00B517F4 /* SceneDelegate.swift in Sources */,
@@ -167,14 +159,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FBFF23BD2AF29D2F00B517F4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FBFF23BE2AF29D2F00B517F4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FBFF23C22AF29D3000B517F4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -317,7 +301,7 @@
 				INFOPLIST_FILE = CryptoViper/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -328,6 +312,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mertozan.CryptoViper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -345,7 +330,7 @@
 				INFOPLIST_FILE = CryptoViper/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -356,6 +341,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mertozan.CryptoViper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
