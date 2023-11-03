@@ -18,16 +18,17 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
+        // Routerinstanceyi oluşturuyoruz
         let routerInstance = CryptoRouter.startExecution()
-        
+        // İlk gösterilecek VC'yi oluşturuyoruz.
         let initialViewController = routerInstance.entry
-        
+        //
         let window = UIWindow(windowScene: windowScene)
-        
+        // İlk gösterilecek VC'mizi gösteriyoruz
         window.rootViewController = initialViewController
         
         self.window = window
-        window.makeKeyAndVisible()
+        window.makeKeyAndVisible()  // Gösterilmesi için yazılması lazım.
         
     }
 

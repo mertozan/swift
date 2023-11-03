@@ -7,9 +7,9 @@
 
 import Foundation
 
-// Struct
+// Modelimiz, Struct
 
-struct Crypto : Codable {
+struct Crypto : Decodable {
     let currency : String
     let price : String
 }

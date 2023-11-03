@@ -8,10 +8,11 @@
 import Foundation
 import UIKit
 
-// Uygulama ilk açıldığında nereden başlayacak gibi işlemleri burada yapıyoruz.
+// Uygulama ilk açıldığında nereden başlayacak gibi işlemleri burada yapıyoruz. EntryPoint belirteceğiz, giriş noktası başlangıç
 // Class, protocol
-// EntryPoint
 
+
+// typealias = EntryPoint gördüğün her yerde EntryPoint AnyView & UIViewController demek.
 typealias EntryPoint = AnyView & UIViewController
 
 protocol AnyRouter {
@@ -43,6 +44,7 @@ class CryptoRouter : AnyRouter {
         
         return router
     }
+    // En son SceneDelegateye gitmemiz lazım. 
     
     
 }

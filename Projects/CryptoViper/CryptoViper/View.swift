@@ -8,9 +8,9 @@
 import Foundation
 import UIKit
 
-// Talks to-> presenter
-// Class, protocol
-// ViewController
+// talks to-> presenter
+// class, protocol kullanılacak
+// VC'mizi burada oluşturacağız
 
 protocol AnyView {
     
@@ -67,8 +67,6 @@ class DetailViewController : UIViewController {
         priceLabel.isHidden = false
     }
     
-    
-
 }
     
     
@@ -81,7 +79,7 @@ class DetailViewController : UIViewController {
         private let tableView : UITableView = {
             
             let table = UITableView()
-            table.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+            table.register(UITableViewCell.self, forCellReuseIdentifier: "cell")    // Hangi cell ile çalışacağız
             table.isHidden = true   // Gizlememizin sebebi ilk veriyi indirdiğimizde boş tw görmek istemiyoruz veri geldiğinde tw göstericez
             return table
             
@@ -117,11 +115,12 @@ class DetailViewController : UIViewController {
         
         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
             let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+            // İçerik ayarlayıcısı, üstte alta ne gösterileceğini sağlıyor
             var content = cell.defaultContentConfiguration()
-            content.text = cryptos[indexPath.row].currency
-            content.secondaryText = cryptos[indexPath.row].price
-            cell.contentConfiguration = content
-            cell.backgroundColor = .yellow
+            content.text = cryptos[indexPath.row].currency  // Üstteki veri
+            content.secondaryText = cryptos[indexPath.row].price    // Alttaki veri
+            cell.contentConfiguration = content // Oluşturduğumuz contenti cell ile bağladı
+            cell.backgroundColor = .yellow  // İlk açıldığındaki download rengi ile uyumlu olsun diye yaptık
             
             return cell
         }
@@ -134,15 +133,17 @@ class DetailViewController : UIViewController {
             
         }
         
+        //  Update olduktan sonra gösteriyoruz
         func update(with cryptos: [Crypto]) {
             DispatchQueue.main.async {
-                self.cryptos = cryptos
+                self.cryptos = cryptos  // Bize gelen Crpytoslar
                 self.messageLabel.isHidden = true
                 self.tableView.reloadData()
                 self.tableView.isHidden = false
             }
         }
         
+        // Hata gelirse
         func update(with error: String) {
             DispatchQueue.main.async {
                 self.cryptos = []

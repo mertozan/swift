@@ -7,8 +7,8 @@
 
 import Foundation
 
-// Talks to -> Presenter
-// Class, protocol
+// talks to -> Presenter
+// class, protocol
 
 protocol AnyInteractor {
     
@@ -31,20 +31,20 @@ class CryptoInteractor : AnyInteractor {
         let task = URLSession.shared.dataTask(with: url) { data, response, error in
             
             guard let data = data, error == nil else {
-                self.presenter?.interactorDidDownloadcrypto(result: .failure(NetworkError.NetworkFailed))
+                self.presenter?.interactorDidDownloadCrypto(result: .failure(NetworkError.NetworkFailed))
                 return
             }
             
             do {
                 let cryptos = try JSONDecoder().decode([Crypto].self, from: data)
-                self.presenter?.interactorDidDownloadcrypto(result: .success(cryptos))
+                self.presenter?.interactorDidDownloadCrypto(result: .success(cryptos))
                 
             } catch {
-                self.presenter?.interactorDidDownloadcrypto(result: .failure(NetworkError.ParsingFailed))
+                self.presenter?.interactorDidDownloadCrypto(result: .failure(NetworkError.ParsingFailed))
             }
         }
         
-        task.resume()
+        task.resume() // URLSession resume ediyoruz
     }
     
     

@@ -22,7 +22,7 @@ protocol AnyPresenter {
     var interactor : AnyInteractor? {get set}
     var view : AnyView? {get set}
     
-    func interactorDidDownloadcrypto(result: Result<[Crypto],Error>)
+    func interactorDidDownloadCrypto(result: Result<[Crypto],Error>)
     
 }
 
@@ -31,6 +31,7 @@ class CryptoPresenter : AnyPresenter {
     var router: AnyRouter?
     
     var interactor: AnyInteractor? {
+        // Değerler atanınca yapılacka işlemler, interactor ve presenter birbirine bağlandığında çalışacak 
         didSet {
             interactor?.downloadCryptos()
         }
@@ -39,7 +40,7 @@ class CryptoPresenter : AnyPresenter {
     var view: AnyView?
     
     // Bir 
-    func interactorDidDownloadcrypto(result: Result<[Crypto], Error>) {
+    func interactorDidDownloadCrypto(result: Result<[Crypto], Error>) {
         switch result{
         case .success(let cryptos):
             view?.update(with: cryptos)
