@@ -22,7 +22,7 @@ class CryptoTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    // CryptoTableViewCell sınıfının içerisinde böyle bir propertyi var itemi tanımladığımızda didSet = Property tanımlandığı gibi ne yapar onu sorar.
+    // CryptoTableViewCell sınıfının içerisinde böyle bir propertyi var, tanımladığımızda didSet = Property tanımlandığı gibi ne yapar onu sorar.
     public var item : Crypto! {
         didSet {
             self.nameLabel.text = item.currency

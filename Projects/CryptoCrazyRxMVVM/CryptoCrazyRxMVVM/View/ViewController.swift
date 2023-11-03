@@ -16,7 +16,7 @@ class ViewController: UIViewController, UITableViewDelegate /*UITableViewDataSou
     @IBOutlet weak var indicatorView: UIActivityIndicatorView!
     
     let cryptoVM = CryptoViewModel()
-    let disposeBag = DisposeBag()   // Disposebag = Hafızayı temizler
+    let disposeBag = DisposeBag()   // DisposeBag = Çöp çantası, hafızayı temizler. RxSwiftten türeyen bir yapı
     
     var cryptosList = [Crypto]()
     
@@ -32,17 +32,18 @@ class ViewController: UIViewController, UITableViewDelegate /*UITableViewDataSou
         
     }
     
+    //
     private func setupBindings() {
         
         cryptoVM
             .loading
-            .bind(to: self.indicatorView.rx.isAnimating)    // True geldiğinde indicatorView'ın is animatingi trueye çevirir, false gelirse false çevirir.
+            .bind(to: self.indicatorView.rx.isAnimating)    // Bind = Datayı direk olarak görünüme bağlama özelliği var. Tableview indicatorView gibi görünümlerde kullanılabiliyor. True geldiğinde indicatorView'ın is animatingi trueye çevirir, false gelirse false çevirir.
             .disposed(by: disposeBag)
         
         cryptoVM
             .error
             .observe(on: MainScheduler.asyncInstance)   // Bu fonksiyon hangi threadde yapacağımızı soruyor. main threadde çalışacağını belirttik.
-            .subscribe { errorString in
+            .subscribe { errorString in // subscribe.onNext
                 print(errorString)
             }
             .disposed(by: disposeBag)
@@ -58,7 +59,7 @@ class ViewController: UIViewController, UITableViewDelegate /*UITableViewDataSou
             .disposed(by: disposeBag)
         */
         
-        // Tableviewda binding yapma
+        // Tableviewda binding yapma. Bu şekilde yaptığımız zaman TableView ile ilgili fonk işlemlerini yazmıyoruz(81-94). Datasource siliyoruz.
         
         cryptoVM
             .cryptos

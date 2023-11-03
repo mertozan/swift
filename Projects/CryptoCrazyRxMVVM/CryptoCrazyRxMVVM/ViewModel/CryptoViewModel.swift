@@ -9,7 +9,10 @@ import Foundation
 import RxSwift
 import RxCocoa
 
-/* RxSwift ViewModel içinde bir yayın yapıyoruz. VC'den ViewModele subscribe olacağız. ViewModelde bir değişiklik olursa VC'ye abone olduğumuz verileri gözlemleyebilir olacağız. */
+/* 
+    RxSwift ViewModel içinde bir yayın yapıyoruz. VC'den ViewModele subscribe olacağız. ViewModelde bir değişiklik olursa VC'ye abone olduğumuz verileri gözlemleyebilir olacağız. 
+ 
+ */
 
 class CryptoViewModel {
     
@@ -20,8 +23,8 @@ class CryptoViewModel {
     // Loading yaparken bir animasyon koyabilmemizi sağlar. Genelde kullanılır. Bunu da fonksiyonun en başında kullanıyoruz. Loadingi true yapıyoruz. Loadingin verisi değiştiğinde VC'de ne yapılacak 
     let loading : PublishSubject<Bool> = PublishSubject()
     
+    
     func requestData () {
-        
         self.loading.onNext(true)   // Fonksiyonun cevabı gelince false yaparız. Cevap Result kısmında geliyor. Bu veri artık publishSubject olduğu için loading = true gibi bir tanımlama yapamıyoruz. onNext yani bir sonraki değeri ile değerlerini değiştirebiliyoruz.
         let url = URL(string: "https://raw.githubusercontent.com/atilsamancioglu/K21-JSONDataSet/master/crypto.json")!
         Webservice().downloadCurrencies(url: url) { result in
