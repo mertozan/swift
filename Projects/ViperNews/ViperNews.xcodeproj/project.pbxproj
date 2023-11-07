@@ -7,23 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FBA8633E2AFACDE30030A0D8 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = FBA8633D2AFACDE30030A0D8 /* SDWebImage */; };
+		FBA863402AFACDE30030A0D8 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = FBA8633F2AFACDE30030A0D8 /* SDWebImageMapKit */; };
+		FBA863452AFAD98E0030A0D8 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA863432AFAD98E0030A0D8 /* NewsTableViewCell.swift */; };
+		FBA863462AFAD98E0030A0D8 /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBA863442AFAD98E0030A0D8 /* NewsTableViewCell.xib */; };
 		FBB69A602AF9393200B8C011 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB69A5F2AF9393200B8C011 /* AppDelegate.swift */; };
 		FBB69A622AF9393200B8C011 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB69A612AF9393200B8C011 /* SceneDelegate.swift */; };
-		FBB69A642AF9393200B8C011 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB69A632AF9393200B8C011 /* ViewController.swift */; };
-		FBB69A672AF9393200B8C011 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBB69A652AF9393200B8C011 /* Main.storyboard */; };
 		FBB69A692AF9393300B8C011 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBB69A682AF9393300B8C011 /* Assets.xcassets */; };
 		FBB69A6C2AF9393300B8C011 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBB69A6A2AF9393300B8C011 /* LaunchScreen.storyboard */; };
+		FBB69A762AF93B0C00B8C011 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB69A752AF93B0C00B8C011 /* View.swift */; };
+		FBB69A782AF93B1A00B8C011 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB69A772AF93B1A00B8C011 /* Interactor.swift */; };
+		FBB69A7A2AF93B2700B8C011 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB69A792AF93B2700B8C011 /* Presenter.swift */; };
+		FBB69A7C2AF93B3200B8C011 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB69A7B2AF93B3200B8C011 /* Entity.swift */; };
+		FBB69A7E2AF93B3800B8C011 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB69A7D2AF93B3800B8C011 /* Router.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FBA863432AFAD98E0030A0D8 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
+		FBA863442AFAD98E0030A0D8 /* NewsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsTableViewCell.xib; sourceTree = "<group>"; };
 		FBB69A5C2AF9393200B8C011 /* ViperNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViperNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBB69A5F2AF9393200B8C011 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBB69A612AF9393200B8C011 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FBB69A632AF9393200B8C011 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FBB69A662AF9393200B8C011 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FBB69A682AF9393300B8C011 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FBB69A6B2AF9393300B8C011 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FBB69A6D2AF9393300B8C011 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBB69A752AF93B0C00B8C011 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		FBB69A772AF93B1A00B8C011 /* Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
+		FBB69A792AF93B2700B8C011 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		FBB69A7B2AF93B3200B8C011 /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
+		FBB69A7D2AF93B3800B8C011 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +43,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBA863402AFACDE30030A0D8 /* SDWebImageMapKit in Frameworks */,
+				FBA8633E2AFACDE30030A0D8 /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,11 +72,16 @@
 			children = (
 				FBB69A5F2AF9393200B8C011 /* AppDelegate.swift */,
 				FBB69A612AF9393200B8C011 /* SceneDelegate.swift */,
-				FBB69A632AF9393200B8C011 /* ViewController.swift */,
-				FBB69A652AF9393200B8C011 /* Main.storyboard */,
 				FBB69A682AF9393300B8C011 /* Assets.xcassets */,
 				FBB69A6A2AF9393300B8C011 /* LaunchScreen.storyboard */,
 				FBB69A6D2AF9393300B8C011 /* Info.plist */,
+				FBB69A752AF93B0C00B8C011 /* View.swift */,
+				FBB69A772AF93B1A00B8C011 /* Interactor.swift */,
+				FBB69A792AF93B2700B8C011 /* Presenter.swift */,
+				FBB69A7B2AF93B3200B8C011 /* Entity.swift */,
+				FBB69A7D2AF93B3800B8C011 /* Router.swift */,
+				FBA863432AFAD98E0030A0D8 /* NewsTableViewCell.swift */,
+				FBA863442AFAD98E0030A0D8 /* NewsTableViewCell.xib */,
 			);
 			path = ViperNews;
 			sourceTree = "<group>";
@@ -83,6 +102,10 @@
 			dependencies = (
 			);
 			name = ViperNews;
+			packageProductDependencies = (
+				FBA8633D2AFACDE30030A0D8 /* SDWebImage */,
+				FBA8633F2AFACDE30030A0D8 /* SDWebImageMapKit */,
+			);
 			productName = ViperNews;
 			productReference = FBB69A5C2AF9393200B8C011 /* ViperNews.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +134,9 @@
 				Base,
 			);
 			mainGroup = FBB69A532AF9393200B8C011;
+			packageReferences = (
+				FBA8633C2AFACDE30030A0D8 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = FBB69A5D2AF9393200B8C011 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,8 +152,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBB69A6C2AF9393300B8C011 /* LaunchScreen.storyboard in Resources */,
+				FBA863462AFAD98E0030A0D8 /* NewsTableViewCell.xib in Resources */,
 				FBB69A692AF9393300B8C011 /* Assets.xcassets in Resources */,
-				FBB69A672AF9393200B8C011 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +164,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBB69A642AF9393200B8C011 /* ViewController.swift in Sources */,
 				FBB69A602AF9393200B8C011 /* AppDelegate.swift in Sources */,
 				FBB69A622AF9393200B8C011 /* SceneDelegate.swift in Sources */,
+				FBA863452AFAD98E0030A0D8 /* NewsTableViewCell.swift in Sources */,
+				FBB69A7C2AF93B3200B8C011 /* Entity.swift in Sources */,
+				FBB69A7E2AF93B3800B8C011 /* Router.swift in Sources */,
+				FBB69A782AF93B1A00B8C011 /* Interactor.swift in Sources */,
+				FBB69A762AF93B0C00B8C011 /* View.swift in Sources */,
+				FBB69A7A2AF93B2700B8C011 /* Presenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FBB69A652AF9393200B8C011 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FBB69A662AF9393200B8C011 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FBB69A6A2AF9393300B8C011 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -297,7 +320,6 @@
 				INFOPLIST_FILE = ViperNews/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -325,7 +347,6 @@
 				INFOPLIST_FILE = ViperNews/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -363,6 +384,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FBA8633C2AFACDE30030A0D8 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.18.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FBA8633D2AFACDE30030A0D8 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FBA8633C2AFACDE30030A0D8 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		FBA8633F2AFACDE30030A0D8 /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FBA8633C2AFACDE30030A0D8 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FBB69A542AF9393200B8C011 /* Project object */;
 }
