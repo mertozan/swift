@@ -34,7 +34,6 @@ class NewsInteractor : AnyInteractor {
             do {
                 let decoder = JSONDecoder()
                 let newsResponse = try decoder.decode(News.self, from: data)
-                print("hello", newsResponse)
                 let articles = newsResponse.articles
                 self.presenter?.interactorDidDownloadNews(result: .success(articles))
             } catch {

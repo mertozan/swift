@@ -18,46 +18,66 @@ protocol AnyView {
 }
 
 
-class DetailsViewController : UIViewController {
+class DetailsViewController : UIViewController{
     
     var presenter : AnyPresenter?
     // title yazınca hata veriyor. Bunu sor
     
+    var articles : [Article] = []
     
     var baslik: String = ""
     var author: String? = ""
     var content: String = ""
+    var publishedDate: String = ""
+    var imageUrl: String = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(titleLabel)
         view.addSubview(authorLabel)
-        view.addSubview(ContentLabel)
-        view.backgroundColor = .white
+        view.addSubview(contentLabel)
+        view.addSubview(imageView)
     }
+    
+    private let imageView : UIImageView = {
+        let imageView = UIImageView()
+        imageView.contentMode = .scaleAspectFit
+        return imageView
+        }()
     
     private let titleLabel : UILabel = {
         let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 20)
+        label.font = UIFont.systemFont(ofSize: 24)
         label.textColor = .black
-        label.textAlignment = .center
+        label.textAlignment = .left
+        label.numberOfLines = 0
         return label
     }()
     
     private let authorLabel : UILabel = {
         
         let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 15)
+        label.font = UIFont.systemFont(ofSize: 18)
         label.textColor = .black
-        label.textAlignment = .center
+        label.textAlignment = .left
+        label.numberOfLines = 0
         return label
         
     }()
     
-    private let ContentLabel : UILabel = {
+    private let dateLabel : UILabel = {
+        let label = UILabel()
+        label.font = UIFont.systemFont(ofSize: 16)
+        label.textColor = .black
+        label.textAlignment = .left
+        label.numberOfLines = 0
+        return label
+    }()
+    
+    private let contentLabel : UILabel = {
         
         let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 20)
+        label.font = UIFont.systemFont(ofSize: 16)
         label.textColor = .black
         label.textAlignment = .left
         label.numberOfLines = 0
@@ -67,12 +87,25 @@ class DetailsViewController : UIViewController {
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        titleLabel.frame = CGRect(x: view.frame.width / 2 - 100, y: view.frame.height / 2 + 25, width: 200, height: 50)
-        authorLabel.frame = CGRect(x: view.frame.width / 2 - 100, y: view.frame.height / 2 + 50, width: 200, height: 50)
-        ContentLabel.frame = CGRect(x: 20, y: 0, width: view.frame.width - 50, height: 300)
-        ContentLabel.text = content
         titleLabel.text = baslik
         authorLabel.text = author
+        contentLabel.text = content
+        
+        dateLabel.text = publishedDate
+        
+        if let imageUrl = URL(string: imageUrl) {
+            imageView.sd_setImage(with: imageUrl, placeholderImage: UIImage(named: "placeholder_image"))
+                } else {
+                    // Geçersiz URL durumu için yer tutma görüntüsü
+                    imageView.image = UIImage(named: "placeholder_image")
+                }
+        
+        titleLabel.frame = CGRect(x: 20, y: 20, width: view.frame.width - 40, height: 100)
+        imageView.frame = CGRect(x: 20, y: titleLabel.frame.maxY, width: view.frame.width - 40, height: 230)
+        authorLabel.frame = CGRect(x: 20, y: imageView.frame.maxY + 10, width: view.frame.width - 40, height: 50)
+        dateLabel.frame = CGRect(x: 20, y: authorLabel.frame.maxY + 5, width: view.frame.width - 40, height: 50)
+        let contentLabelSize = contentLabel.sizeThatFits(CGSize(width: view.frame.width - 40, height: CGFloat.greatestFiniteMagnitude))
+        contentLabel.frame = CGRect(x: 20, y: dateLabel.frame.maxY + 5, width: view.frame.width - 40, height: contentLabelSize.height)
     }
 }
 
@@ -126,7 +159,6 @@ class NewsViewController : UIViewController, AnyView, UITableViewDelegate, UITab
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "NewsTableViewCell", for: indexPath) as? NewsTableViewCell
-        
         cell?.setCellOptions(image: UIImage(systemName: "folder.fill") ?? UIImage(), titleText: articles[indexPath.row].title, authorText: articles[indexPath.row].author!)
         if let imageUrl = URL(string: articles[indexPath.row].urlToImage ?? "String") {
             cell!.newsImageView.sd_setImage(with: imageUrl, placeholderImage: UIImage(named: "placeholder_image"))
@@ -169,6 +201,8 @@ class NewsViewController : UIViewController, AnyView, UITableViewDelegate, UITab
         nextViewController.baslik = articles[indexPath.row].title
         nextViewController.author = articles[indexPath.row].author
         nextViewController.content = articles[indexPath.row].content
+        nextViewController.publishedDate = articles[indexPath.row].publishedAt
+        nextViewController.imageUrl = articles[indexPath.row].urlToImage!
         self.present(nextViewController, animated: true, completion: nil)
     }
     
