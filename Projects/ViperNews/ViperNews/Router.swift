@@ -14,6 +14,7 @@ protocol AnyRouter {
     
     var entry : EntryPoint? {get}
     static func startExecution() -> AnyRouter
+    func makeDetails(article: Article) -> UIViewController?
     
 }
 
@@ -40,6 +41,19 @@ class NewsRouter : AnyRouter {
         router.entry = view as? EntryPoint
         
         return router
+    }
+    
+    func makeDetails(article: Article) -> UIViewController? {
+        let viewController = DetailsViewController(nibName: "DetailsView", bundle: nil)
+        let interactor = DetailsInteractor()
+        let presenter = DetailsPresenter()
+        let router = DetailsRouter()
+        viewController.interactor = interactor
+        viewController.article = article
+        interactor.presenter = presenter
+        presenter.viewController = viewController
+        router.viewController = viewController
+        return viewController
     }
     
     
