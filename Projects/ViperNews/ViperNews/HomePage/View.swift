@@ -91,7 +91,6 @@ class NewsViewController : UIViewController, AnyView, UITableViewDelegate, UITab
             self.tableView.isHidden = true
             self.messageLabel.text = error
             self.messageLabel.isHidden = false
-
         }
     }
     

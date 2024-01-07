@@ -22,7 +22,7 @@ class NewsInteractor : AnyInteractor {
     
     
     func downloadNews() {
-        guard let url = URL(string: "https://newsapi.org/v2/everything?q=apple&from=2023-11-05&to=2023-11-05&sortBy=popularity&apiKey=027ed2bcd39c40d5a6639e7ff33189ca") else {
+        guard let url = URL(string: "https://newsapi.org/v2/everything?q=tesla&from=2023-11-29&sortBy=publishedAt&apiKey=027ed2bcd39c40d5a6639e7ff33189ca") else {
             return
         }
         

@@ -33,8 +33,6 @@ class DetailsInteractor: DetailsBusinessLogic {
             stringDateFormatter.dateFormat = "dd/MM/yyyy" // Tarih formatını istediğiniz gibi ayarlayabilirsiniz
             dateString = stringDateFormatter.string(from: date)
         }
-        
-        
         presenter?.present(response: Details.NewsInfo.Response(dateString: dateString ?? "", image: request.imageUrl))
     }
     

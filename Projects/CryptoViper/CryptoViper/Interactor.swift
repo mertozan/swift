@@ -31,9 +31,11 @@ class CryptoInteractor : AnyInteractor {
         let task = URLSession.shared.dataTask(with: url) { data, response, error in
             
             guard let data = data, error == nil else {
+                
                 self.presenter?.interactorDidDownloadCrypto(result: .failure(NetworkError.NetworkFailed))
                 return
             }
+            print(data)
             
             do {
                 let cryptos = try JSONDecoder().decode([Crypto].self, from: data)

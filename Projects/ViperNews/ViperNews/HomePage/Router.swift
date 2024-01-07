@@ -15,6 +15,7 @@ protocol AnyRouter {
     var entry : EntryPoint? {get}
     static func startExecution() -> AnyRouter
     func makeDetails(article: Article) -> UIViewController?
+    func makeLike() -> UIViewController
     
 }
 
@@ -56,5 +57,17 @@ class NewsRouter : AnyRouter {
         return viewController
     }
     
+    func makeLike() -> UIViewController {
+        let viewController = LikeViewController(nibName: "LikeView", bundle: nil)
+        let interactor = LikeInteractor()
+        let presenter = LikePresenter()
+        let router = LikeRouter()
+        viewController.interactor = interactor
+        viewController.router = router
+        interactor.presenter = presenter
+        presenter.viewController = viewController
+        router.viewController = viewController
+        return viewController
+    }
     
 }

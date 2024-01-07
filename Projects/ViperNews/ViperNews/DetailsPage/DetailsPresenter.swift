@@ -11,6 +11,7 @@ import UIKit
 protocol DetailsPresentationLogic {
     func present(response: Details.NewsInfo.Response)
     func buttonAction(response: Details.ButtonAction.Response)
+    
 }
 
 class DetailsPresenter: DetailsPresentationLogic {

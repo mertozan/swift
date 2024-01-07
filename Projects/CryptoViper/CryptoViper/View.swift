@@ -24,8 +24,8 @@ protocol AnyView {
 
 
 class DetailViewController : UIViewController {
-    var presenter: AnyPresenter?
     
+    var presenter: AnyPresenter?
     var currency : String = ""
     var price : String = ""
     
@@ -143,7 +143,7 @@ class DetailViewController : UIViewController {
             }
         }
         
-        // Hata gelirse
+        // Hata gelirsed
         func update(with error: String) {
             DispatchQueue.main.async {
                 self.cryptos = []

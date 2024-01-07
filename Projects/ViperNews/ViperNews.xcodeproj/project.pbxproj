@@ -26,6 +26,12 @@
 		FBB69A7A2AF93B2700B8C011 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB69A792AF93B2700B8C011 /* Presenter.swift */; };
 		FBB69A7C2AF93B3200B8C011 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB69A7B2AF93B3200B8C011 /* Entity.swift */; };
 		FBB69A7E2AF93B3800B8C011 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB69A7D2AF93B3800B8C011 /* Router.swift */; };
+		FBEB62CF2B04F3F600FB7BE7 /* LikePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEB62C92B04F3F600FB7BE7 /* LikePresenter.swift */; };
+		FBEB62D02B04F3F600FB7BE7 /* LikeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEB62CA2B04F3F600FB7BE7 /* LikeRouter.swift */; };
+		FBEB62D12B04F3F600FB7BE7 /* LikeModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEB62CB2B04F3F600FB7BE7 /* LikeModels.swift */; };
+		FBEB62D22B04F3F600FB7BE7 /* LikeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEB62CC2B04F3F600FB7BE7 /* LikeViewController.swift */; };
+		FBEB62D32B04F3F600FB7BE7 /* LikeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEB62CD2B04F3F600FB7BE7 /* LikeInteractor.swift */; };
+		FBEB62D42B04F3F600FB7BE7 /* LikeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBEB62CE2B04F3F600FB7BE7 /* LikeView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +54,12 @@
 		FBB69A792AF93B2700B8C011 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 		FBB69A7B2AF93B3200B8C011 /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
 		FBB69A7D2AF93B3800B8C011 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		FBEB62C92B04F3F600FB7BE7 /* LikePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikePresenter.swift; sourceTree = "<group>"; };
+		FBEB62CA2B04F3F600FB7BE7 /* LikeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeRouter.swift; sourceTree = "<group>"; };
+		FBEB62CB2B04F3F600FB7BE7 /* LikeModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeModels.swift; sourceTree = "<group>"; };
+		FBEB62CC2B04F3F600FB7BE7 /* LikeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeViewController.swift; sourceTree = "<group>"; };
+		FBEB62CD2B04F3F600FB7BE7 /* LikeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeInteractor.swift; sourceTree = "<group>"; };
+		FBEB62CE2B04F3F600FB7BE7 /* LikeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LikeView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,11 +78,11 @@
 		FB13378F2B03AD210009639B /* DetailsPage */ = {
 			isa = PBXGroup;
 			children = (
-				FB1337902B03AD3D0009639B /* DetailsPresenter.swift */,
-				FB1337912B03AD3D0009639B /* DetailsRouter.swift */,
-				FB1337922B03AD3D0009639B /* DetailsModels.swift */,
 				FB1337932B03AD3D0009639B /* DetailsViewController.swift */,
 				FB1337942B03AD3D0009639B /* DetailsInteractor.swift */,
+				FB1337902B03AD3D0009639B /* DetailsPresenter.swift */,
+				FB1337922B03AD3D0009639B /* DetailsModels.swift */,
+				FB1337912B03AD3D0009639B /* DetailsRouter.swift */,
 				FB1337952B03AD3D0009639B /* DetailsView.xib */,
 			);
 			path = DetailsPage;
@@ -95,12 +107,21 @@
 		FBB69A5E2AF9393200B8C011 /* ViperNews */ = {
 			isa = PBXGroup;
 			children = (
+				FBEB62C82B04F3D100FB7BE7 /* LikePage */,
+				FBEB62C72B04F06800FB7BE7 /* HomePage */,
 				FB13378F2B03AD210009639B /* DetailsPage */,
 				FBB69A5F2AF9393200B8C011 /* AppDelegate.swift */,
 				FBB69A612AF9393200B8C011 /* SceneDelegate.swift */,
 				FBB69A682AF9393300B8C011 /* Assets.xcassets */,
 				FBB69A6A2AF9393300B8C011 /* LaunchScreen.storyboard */,
 				FBB69A6D2AF9393300B8C011 /* Info.plist */,
+			);
+			path = ViperNews;
+			sourceTree = "<group>";
+		};
+		FBEB62C72B04F06800FB7BE7 /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
 				FBB69A752AF93B0C00B8C011 /* View.swift */,
 				FBB69A772AF93B1A00B8C011 /* Interactor.swift */,
 				FBB69A792AF93B2700B8C011 /* Presenter.swift */,
@@ -109,7 +130,20 @@
 				FBA863432AFAD98E0030A0D8 /* NewsTableViewCell.swift */,
 				FBA863442AFAD98E0030A0D8 /* NewsTableViewCell.xib */,
 			);
-			path = ViperNews;
+			path = HomePage;
+			sourceTree = "<group>";
+		};
+		FBEB62C82B04F3D100FB7BE7 /* LikePage */ = {
+			isa = PBXGroup;
+			children = (
+				FBEB62CC2B04F3F600FB7BE7 /* LikeViewController.swift */,
+				FBEB62CD2B04F3F600FB7BE7 /* LikeInteractor.swift */,
+				FBEB62C92B04F3F600FB7BE7 /* LikePresenter.swift */,
+				FBEB62CB2B04F3F600FB7BE7 /* LikeModels.swift */,
+				FBEB62CA2B04F3F600FB7BE7 /* LikeRouter.swift */,
+				FBEB62CE2B04F3F600FB7BE7 /* LikeView.xib */,
+			);
+			path = LikePage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +211,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBEB62D42B04F3F600FB7BE7 /* LikeView.xib in Resources */,
 				FBB69A6C2AF9393300B8C011 /* LaunchScreen.storyboard in Resources */,
 				FB13379B2B03AD3D0009639B /* DetailsView.xib in Resources */,
 				FBA863462AFAD98E0030A0D8 /* NewsTableViewCell.xib in Resources */,
@@ -195,9 +230,14 @@
 				FBB69A622AF9393200B8C011 /* SceneDelegate.swift in Sources */,
 				FBA863452AFAD98E0030A0D8 /* NewsTableViewCell.swift in Sources */,
 				FB1337972B03AD3D0009639B /* DetailsRouter.swift in Sources */,
+				FBEB62D12B04F3F600FB7BE7 /* LikeModels.swift in Sources */,
 				FBB69A7C2AF93B3200B8C011 /* Entity.swift in Sources */,
+				FBEB62D02B04F3F600FB7BE7 /* LikeRouter.swift in Sources */,
+				FBEB62CF2B04F3F600FB7BE7 /* LikePresenter.swift in Sources */,
 				FBB69A7E2AF93B3800B8C011 /* Router.swift in Sources */,
+				FBEB62D32B04F3F600FB7BE7 /* LikeInteractor.swift in Sources */,
 				FBB69A782AF93B1A00B8C011 /* Interactor.swift in Sources */,
+				FBEB62D22B04F3F600FB7BE7 /* LikeViewController.swift in Sources */,
 				FBB69A762AF93B0C00B8C011 /* View.swift in Sources */,
 				FB13379A2B03AD3D0009639B /* DetailsInteractor.swift in Sources */,
 				FBB69A7A2AF93B2700B8C011 /* Presenter.swift in Sources */,

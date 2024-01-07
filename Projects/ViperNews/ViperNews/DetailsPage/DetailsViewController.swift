@@ -30,12 +30,9 @@ class DetailsViewController: UIViewController, DetailsDisplayLogic {
     
     var interactor: DetailsBusinessLogic?
     
-    
     var presenter : AnyPresenter?
-    // title yazınca hata veriyor. Bunu sor
     
     var article : Article?
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,6 +41,7 @@ class DetailsViewController: UIViewController, DetailsDisplayLogic {
         view.addSubview(contentLabel)
         view.addSubview(imageView)
         view.addSubview(dateLabel)
+        view.addSubview(showLikePage)
         view.backgroundColor = .white
     }
     
@@ -92,6 +90,21 @@ class DetailsViewController: UIViewController, DetailsDisplayLogic {
         
     }()
     
+    private let showLikePage : UIButton = {
+        let button = UIButton()
+        button.setTitle("Show Like Page", for: .normal)
+        button.addTarget(self, action: #selector(showTapped), for: .touchUpInside)
+        button.setTitleColor(.white, for: .normal)
+        button.backgroundColor = .gray
+        return button
+    }()
+    
+    @objc func showTapped (){
+        let nextViewController = presenter?.router?.makeLike() ?? UIViewController()
+        self.present(nextViewController, animated: true, completion: nil)
+    }
+    
+    
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
@@ -107,6 +120,7 @@ class DetailsViewController: UIViewController, DetailsDisplayLogic {
         dateLabel.frame = CGRect(x: 20, y: authorLabel.frame.maxY, width: view.frame.width - 40, height: 50)
         let contentLabelSize = contentLabel.sizeThatFits(CGSize(width: view.frame.width - 40, height: CGFloat.greatestFiniteMagnitude))
         contentLabel.frame = CGRect(x: 20, y: dateLabel.frame.maxY + 5, width: view.frame.width - 40, height: contentLabelSize.height)
-        
+        showLikePage.frame = CGRect(x: 20, y: contentLabel.frame.maxY + 10, width: view.frame.width - 40, height: 50)
+    
     }
 }

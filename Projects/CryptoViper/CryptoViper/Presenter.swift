@@ -31,7 +31,7 @@ class CryptoPresenter : AnyPresenter {
     var router: AnyRouter?
     
     var interactor: AnyInteractor? {
-        // Değerler atanınca yapılacka işlemler, interactor ve presenter birbirine bağlandığında çalışacak 
+        // Değerler atanınca yapılacak işlemler, interactor ve presenter birbirine bağlandığında çalışacak 
         didSet {
             interactor?.downloadCryptos()
         }
