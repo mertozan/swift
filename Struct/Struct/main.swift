@@ -16,24 +16,26 @@ print(classJames.age)
 print(structJames.age)
 
 classJames.age = 51
-print(classJames)
+print(classJames.age)
 structJames.age = 51
 print(structJames.age)
 
 let copyOfClassJames = classJames
 var copyOfStructJames = structJames
-
-print(copyOfClassJames)
-print(copyOfStructJames)
+print("------------")
+print(copyOfClassJames.age)
+print(copyOfStructJames.age)
 
 copyOfClassJames.age = 52
 copyOfStructJames.age = 52
 
+print("------------")
 // Kopya sınıf ile asıl sınıfın değerleri de değişiyor. Çünkü 2 farklı referans tek bir obje içerisinde işlem yapıyor.
-print(copyOfClassJames.age)
-print(copyOfStructJames.age)
-print(classJames.age)
-print(structJames.age)
+print(copyOfClassJames.age) // 52
+print(copyOfStructJames.age)    // 52
+
+print(classJames.age)   // 52 -> 51 olması lazım, ama tek bir value var 2 referans üstünde en son olanı alıyor.
+print(structJames.age)  // 51
 
 
 // Reference Types -> Class
@@ -44,17 +46,18 @@ print(structJames.age)
 
 
 //Function vs Mutating Function
-
+print("Function vs Mutating Function")
 print(classJames.age)
 classJames.happyBirthday()
 print(classJames.age)
-
+print("------------")
 print(structJames.age)
 structJames.happyBirthday()
 print(structJames.age)
 
 
 // TUPLE = Birden fazla veriyi aynı koleksiyon içerisinde kullanmamızı sağlıyor. Diziye benziyor
+print("TUPLE")
 
 let myTuple = (1,3)
 print(myTuple.0)
@@ -72,8 +75,8 @@ let newTuple = (name:"Mert", metallica: true)
 print(newTuple.metallica)
 print(newTuple.name)
 
-// GUARD LET = Daha güvenli işlemler için kullanıyoruz. if let ile benzer
-
+// GUARD LET = Daha güvenli işlemler için kullanıyoruz. if let ile benzer. Baştan eğer işlemi yapamazsan else kısmını yap diyoruz. Ama if lette yapabilirsen yap diyip else kısmını yazmasak da oluyor.
+print("GUARD LET")
 let myNumber = "5"
 
 // MyIntegeri çevir ve oluştur yapamazsan else düş
@@ -97,7 +100,7 @@ print(converttoIntegerGuard(stringInput: myNumber))
 
 
 // SWİTCH CASE
-
+print("SWİTCH CASE")
 let myNum = 11
 let myRemainder = myNum % 2
 print(myRemainder)
