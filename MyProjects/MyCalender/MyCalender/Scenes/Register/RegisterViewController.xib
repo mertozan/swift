@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterViewController" customModule="MyCalender" customModuleProvider="target">
+            <connections>
+                <outlet property="emailText" destination="9Px-sE-jlE" id="aXd-79-jLG"/>
+                <outlet property="passwordText" destination="Wwh-Mu-Vee" id="pAf-8b-9Tt"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Px-sE-jlE">
+                    <rect key="frame" x="78" y="111" width="237" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wwh-Mu-Vee">
+                    <rect key="frame" x="78" y="168" width="237" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h61-ne-8xM">
+                    <rect key="frame" x="147" y="224" width="99" height="56"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="tGo-da-6RX"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Kaydol"/>
+                    <connections>
+                        <action selector="signUp:" destination="-1" eventType="touchUpInside" id="2xf-MH-nqW"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fyA-p9-F7O">
+                    <rect key="frame" x="147" y="288" width="99" height="56"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="Vhf-hU-b3l"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Giriş yap"/>
+                    <connections>
+                        <action selector="signIn:" destination="-1" eventType="touchUpInside" id="HAp-46-Y8l"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Register" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MHe-gr-Yku">
+                    <rect key="frame" x="165" y="741" width="63" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fyA-p9-F7O" firstAttribute="centerX" secondItem="MHe-gr-Yku" secondAttribute="centerX" id="1eV-2M-jJG"/>
+                <constraint firstItem="Wwh-Mu-Vee" firstAttribute="top" secondItem="9Px-sE-jlE" secondAttribute="bottom" constant="23" id="4NQ-Dz-LRR"/>
+                <constraint firstItem="9Px-sE-jlE" firstAttribute="leading" secondItem="Wwh-Mu-Vee" secondAttribute="leading" id="BWk-mS-VHs"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="MHe-gr-Yku" secondAttribute="bottom" constant="56" id="G9l-il-QsP"/>
+                <constraint firstItem="h61-ne-8xM" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="147" id="P31-cd-zmu"/>
+                <constraint firstItem="9Px-sE-jlE" firstAttribute="trailing" secondItem="Wwh-Mu-Vee" secondAttribute="trailing" id="PJb-lD-oqo"/>
+                <constraint firstItem="fyA-p9-F7O" firstAttribute="top" secondItem="h61-ne-8xM" secondAttribute="bottom" constant="8" id="QeB-0x-k8d"/>
+                <constraint firstItem="9Px-sE-jlE" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="52" id="T1u-DT-fQT"/>
+                <constraint firstItem="Wwh-Mu-Vee" firstAttribute="centerX" secondItem="h61-ne-8xM" secondAttribute="centerX" id="WF1-M2-Foc"/>
+                <constraint firstItem="9Px-sE-jlE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="78" id="YNH-Lg-oix"/>
+                <constraint firstItem="h61-ne-8xM" firstAttribute="leading" secondItem="fyA-p9-F7O" secondAttribute="leading" id="lYM-tn-pq4"/>
+                <constraint firstItem="h61-ne-8xM" firstAttribute="trailing" secondItem="fyA-p9-F7O" secondAttribute="trailing" id="tTC-tk-rtg"/>
+                <constraint firstItem="h61-ne-8xM" firstAttribute="top" secondItem="Wwh-Mu-Vee" secondAttribute="bottom" constant="22" id="yai-YS-pIV"/>
+                <constraint firstItem="9Px-sE-jlE" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="zBx-qR-FzQ"/>
+            </constraints>
+            <point key="canvasLocation" x="130.53435114503816" y="-11.267605633802818"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
