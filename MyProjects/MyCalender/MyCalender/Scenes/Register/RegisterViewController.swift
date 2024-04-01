@@ -35,7 +35,6 @@ class RegisterViewController: UIViewController {
           // Eğer email ve password alınamazsa hata ver
           return
         }
-
         RegisterViewModel.signUp(email: email, password: password) { result in
                 // Sonucu işle
                 switch result {
@@ -49,9 +48,6 @@ class RegisterViewController: UIViewController {
                     self.makeAlert(titleInput: "Başarısız", messageInput: error.localizedDescription )
                 }
             }
-
-
-
     }
     
     @IBAction func signIn(_ sender: Any) {
@@ -61,7 +57,6 @@ class RegisterViewController: UIViewController {
     }
     
     func makeAlert(titleInput : String, messageInput: String){
-        
         let alert = UIAlertController(title: titleInput, message: messageInput, preferredStyle: UIAlertController.Style.alert)
         let okButton = UIAlertAction(title: "OK", style: UIAlertAction.Style.default)
         alert.addAction(okButton)

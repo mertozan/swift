@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
 
 
 class HomeViewController: UIViewController {
@@ -33,6 +35,15 @@ class HomeViewController: UIViewController {
         self.navigationController?.pushViewController(vc, animated: true)
         
         
+    }
+    @IBAction func logOutClicked(_ sender: Any) {
+        do {
+            try Auth.auth().signOut()
+            let vc = RegisterViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
+        } catch {
+            print("error")
+        }
     }
     
 }

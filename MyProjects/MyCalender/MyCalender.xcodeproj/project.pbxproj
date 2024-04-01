@@ -142,10 +142,10 @@
 		FB57A0BA2BB84A4C00F5136A /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				FB57A0BB2BB84A5D00F5136A /* LoginViewController.swift */,
 				FB57A0BC2BB84A5D00F5136A /* LoginViewController.xib */,
-				FB57A0BF2BB84A6800F5136A /* LoginModel.swift */,
+				FB57A0BB2BB84A5D00F5136A /* LoginViewController.swift */,
 				FB57A0C12BB84A6F00F5136A /* LoginViewModel.swift */,
+				FB57A0BF2BB84A6800F5136A /* LoginModel.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -203,10 +203,10 @@
 		FBCF69252BB767660043E16C /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				FBCF69262BB7677D0043E16C /* HomeViewController.swift */,
 				FBCF69272BB7677D0043E16C /* HomeViewController.xib */,
-				FBCF692C2BB7679C0043E16C /* HomeModel.swift */,
+				FBCF69262BB7677D0043E16C /* HomeViewController.swift */,
 				FBCF692E2BB767A40043E16C /* HomeViewModel.swift */,
+				FBCF692C2BB7679C0043E16C /* HomeModel.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -214,10 +214,10 @@
 		FBCF69302BB76B7A0043E16C /* Register */ = {
 			isa = PBXGroup;
 			children = (
-				FBCF69312BB76B8F0043E16C /* RegisterViewController.swift */,
 				FBCF69322BB76B8F0043E16C /* RegisterViewController.xib */,
-				FB57A0B82BB8491A00F5136A /* RegisterModel.swift */,
+				FBCF69312BB76B8F0043E16C /* RegisterViewController.swift */,
 				FB57A0B62BB8490A00F5136A /* RegisterViewModel.swift */,
+				FB57A0B82BB8491A00F5136A /* RegisterModel.swift */,
 			);
 			path = Register;
 			sourceTree = "<group>";
