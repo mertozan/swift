@@ -24,8 +24,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 ////        window.makeKeyAndVisible()
         let currentUser = Auth.auth().currentUser
         if currentUser != nil{
-            let homeViewController = HomeViewController(nibName: "HomeViewController", bundle: nil)
-            let navigationController = UINavigationController(rootViewController: homeViewController)
+            let mainTabBarController = MainTabBarController(nibName: "MainTabBarController", bundle: nil)
+            mainTabBarController.setup()
+            let navigationController = UINavigationController(rootViewController: mainTabBarController)
             window?.rootViewController = navigationController
             window?.makeKeyAndVisible()
             

@@ -52,6 +52,10 @@
 		FB57A10E2BB8567400F5136A /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FB57A10D2BB8567400F5136A /* FirebaseRemoteConfigSwift */; };
 		FB57A1102BB8567400F5136A /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = FB57A10F2BB8567400F5136A /* FirebaseStorage */; };
 		FB57A1122BB8567400F5136A /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = FB57A1112BB8567400F5136A /* FirebaseStorageCombine-Community */; };
+		FBAD984C2BBDD72B002FD009 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAD984A2BBDD72B002FD009 /* MainTabBarController.swift */; };
+		FBAD984D2BBDD72B002FD009 /* MainTabBarController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBAD984B2BBDD72B002FD009 /* MainTabBarController.xib */; };
+		FBAD98512BBDDA49002FD009 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAD984F2BBDDA49002FD009 /* ProfileViewController.swift */; };
+		FBAD98522BBDDA49002FD009 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBAD98502BBDDA49002FD009 /* ProfileViewController.xib */; };
 		FBCF69112BB7667A0043E16C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCF69102BB7667A0043E16C /* AppDelegate.swift */; };
 		FBCF69132BB7667A0043E16C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCF69122BB7667A0043E16C /* SceneDelegate.swift */; };
 		FBCF69152BB7667A0043E16C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCF69142BB7667A0043E16C /* ViewController.swift */; };
@@ -74,6 +78,10 @@
 		FB57A0BF2BB84A6800F5136A /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		FB57A0C12BB84A6F00F5136A /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		FB57A0C32BB84C1100F5136A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FBAD984A2BBDD72B002FD009 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		FBAD984B2BBDD72B002FD009 /* MainTabBarController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTabBarController.xib; sourceTree = "<group>"; };
+		FBAD984F2BBDDA49002FD009 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		FBAD98502BBDDA49002FD009 /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
 		FBCF690D2BB7667A0043E16C /* MyCalender.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCalender.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBCF69102BB7667A0043E16C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBCF69122BB7667A0043E16C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -157,6 +165,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FBAD98492BBDD6FE002FD009 /* MainTabbar */ = {
+			isa = PBXGroup;
+			children = (
+				FBAD984A2BBDD72B002FD009 /* MainTabBarController.swift */,
+				FBAD984B2BBDD72B002FD009 /* MainTabBarController.xib */,
+			);
+			path = MainTabbar;
+			sourceTree = "<group>";
+		};
+		FBAD984E2BBDDA1F002FD009 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				FBAD984F2BBDDA49002FD009 /* ProfileViewController.swift */,
+				FBAD98502BBDDA49002FD009 /* ProfileViewController.xib */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		FBCF69042BB7667A0043E16C = {
 			isa = PBXGroup;
 			children = (
@@ -193,6 +219,8 @@
 		FBCF69242BB767540043E16C /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				FBAD984E2BBDDA1F002FD009 /* Profile */,
+				FBAD98492BBDD6FE002FD009 /* MainTabbar */,
 				FB57A0BA2BB84A4C00F5136A /* Login */,
 				FBCF69302BB76B7A0043E16C /* Register */,
 				FBCF69252BB767660043E16C /* Home */,
@@ -323,12 +351,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBAD98522BBDDA49002FD009 /* ProfileViewController.xib in Resources */,
 				FBCF691D2BB7667B0043E16C /* LaunchScreen.storyboard in Resources */,
 				FBCF69342BB76B8F0043E16C /* RegisterViewController.xib in Resources */,
 				FB57A0BE2BB84A5D00F5136A /* LoginViewController.xib in Resources */,
 				FBCF691A2BB7667B0043E16C /* Assets.xcassets in Resources */,
 				FBCF69182BB7667A0043E16C /* Main.storyboard in Resources */,
 				FBCF69292BB7677D0043E16C /* HomeViewController.xib in Resources */,
+				FBAD984D2BBDD72B002FD009 /* MainTabBarController.xib in Resources */,
 				FB57A0C42BB84C1100F5136A /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,9 +374,11 @@
 				FBCF692F2BB767A40043E16C /* HomeViewModel.swift in Sources */,
 				FBCF69332BB76B8F0043E16C /* RegisterViewController.swift in Sources */,
 				FB57A0C02BB84A6800F5136A /* LoginModel.swift in Sources */,
+				FBAD98512BBDDA49002FD009 /* ProfileViewController.swift in Sources */,
 				FB57A0B72BB8490A00F5136A /* RegisterViewModel.swift in Sources */,
 				FBCF69112BB7667A0043E16C /* AppDelegate.swift in Sources */,
 				FBCF69132BB7667A0043E16C /* SceneDelegate.swift in Sources */,
+				FBAD984C2BBDD72B002FD009 /* MainTabBarController.swift in Sources */,
 				FBCF692D2BB7679C0043E16C /* HomeModel.swift in Sources */,
 				FB57A0C22BB84A6F00F5136A /* LoginViewModel.swift in Sources */,
 				FBCF69282BB7677D0043E16C /* HomeViewController.swift in Sources */,

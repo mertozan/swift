@@ -34,7 +34,8 @@ class LoginViewController: UIViewController {
                 if error != nil {
                     self.makeAlert(titleInput: "Error!", messageInput: error?.localizedDescription ?? "Error")
                 } else {
-                    let vc = HomeViewController()
+                    let vc = MainTabBarController()
+                    vc.setup()
                     self.navigationController?.pushViewController(vc, animated: true)
                 }
             }
